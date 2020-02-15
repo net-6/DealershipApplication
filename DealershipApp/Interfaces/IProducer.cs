@@ -7,7 +7,7 @@ namespace DealershipApp.Interfaces
 {
     interface IProducer
     {
-        Car ProduceCar(string carType, string modelName, int productionYear);
+        Car ProduceCar(string modelName, int productionYear, string carTyp);
         void DesignCar();
     }
 }

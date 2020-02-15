@@ -50,6 +50,8 @@ namespace DealershipApp
 
             Console.WriteLine($"After {order2.WeeksToDeliver} weeks, he received his {skodaCar1.ModelName}.");
 
+            alexCustomer.BuyCar(skodaCar1, skodaStore);
+
             Console.ReadKey();
         }
     }

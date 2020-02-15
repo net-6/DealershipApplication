@@ -16,12 +16,10 @@ namespace DealershipApp.Models
             CarsProduced = new List<Car>();
         }
 
-        public Car ProduceCar(string carType, string modelName, int productionYear)
+        //This method instantiates a new car and adds it to the producers stock.
+        public Car ProduceCar(string modelName, int productionYear, string carType)
         {
-            var producedCar = new Car(this, modelName, productionYear)
-            {
-                CarType = carType,
-            };
+            var producedCar = new Car(this, modelName, productionYear, carType);
             this.CarsProduced.Add(producedCar);
             return producedCar;
 

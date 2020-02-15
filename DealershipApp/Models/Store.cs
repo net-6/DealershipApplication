@@ -17,12 +17,14 @@ namespace DealershipApp.Models
             Stock = new List<Car>();
             Name = name;
         }
+
+        // When a car is added to the store's stock it's removed from the Producers's stock.
         public void AddCar(Car carToAdd, decimal price)
         {
             carToAdd.Price = price;
             Stock.Add(carToAdd);
             carToAdd.Producer.CarsProduced.Remove(carToAdd);
-            
+
         }
         public void OpenStore()
         {

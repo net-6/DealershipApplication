@@ -10,6 +10,7 @@ namespace DealershipApp.Models
         private readonly Producer producer;
         private readonly string modelName;
         private readonly int productionYear;
+        private readonly string carType;
 
         public Producer Producer { get { return producer; } }
         public string ModelName { get { return modelName; } }
@@ -18,11 +19,12 @@ namespace DealershipApp.Models
 
         public decimal Price { get; set; }
 
-        public Car(Producer producer, string modelName, int productionYear)
+        public Car(Producer producer, string modelName, int productionYear, string carType)
         {
             this.producer = producer;
             this.modelName = modelName;
             this.productionYear = productionYear;
+            CarType = carType;
         }
         public void Move()
         {
