@@ -6,7 +6,7 @@
 -	Producer (IProducer)
 -	Car (IVehicle)
 
-Inside the main method to implement the following behavior: 
+Inside the main method implement the following behavior: 
 -	Alex intended to buy a Ford Focus 2015 model. 
 -	He walked to the FordStore in Bucuresti and agreed to buy one for 15000Euro.
 -	They informed him it will take 4 weeks for delivery.
